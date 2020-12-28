@@ -78,7 +78,7 @@ bubbleSort，开销就是 10 000（1002）。<br />
 
 ### 时间复杂度比较
 #### 1.数据结构
-<table align='center'>
+<table>
   <thead>
     <tr>
       <th rowspan='2' align='left'>数据结构</th>
@@ -249,10 +249,8 @@ NP问题中最难的是NP完全问题，它满足以下两个条件：<br />
 
 下面是满足P < > NP时，P、NP、NP完全和NP困难问题的欧拉图：
 >
-![images][complex_np_hard]
+![http://dsjs.docs.junfengshow.com/docs/calculation/complex_np_hard.png](http://dsjs.docs.junfengshow.com/docs/calculation/complex_np_hard.png 'http://dsjs.docs.junfengshow.com/docs/calculation/complex_np_hard.png')
 
-[complex_np_hard]: /docs/calculation/complex_np_hard.png 'url'
->
 
 非NP完全的NP困难问题的例子有停机问题和布尔可满足性问题（SAT）。
 NP完全问题的例子有子集和问题、旅行商问题、顶点覆盖问题，等等。
