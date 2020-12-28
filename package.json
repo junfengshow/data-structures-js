@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "doc:dev": "npx dumi dev",
-    "doc:build": "npx dumi build"
+    "start": "umi dev",
+    "build": "umi build",
+    "doc:dev": "cross-env UMI_ENV=doc npx dumi dev",
+    "doc:build": "cross-env UMI_ENV=doc npx dumi build"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/junfengshow/data-structures-js#readme",
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "dumi": "^1.0.38"
   }
 }

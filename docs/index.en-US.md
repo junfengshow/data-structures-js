@@ -6,7 +6,7 @@ hero:
   desc: jddkdk
   actions:
     - text: 进入笔记
-      link: /guide
+      link: /foundation
 footer: © 2018-2020 All Rights Reserved Developed by [wujunfeng](https://www.junfengshow.com)
 ---
 
