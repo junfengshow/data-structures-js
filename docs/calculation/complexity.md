@@ -251,7 +251,7 @@ NP问题中最难的是NP完全问题，它满足以下两个条件：<br />
 >
 ![images][complex_np_hard]
 
-[complex_np_hard]: http://dsjs.docs.junfengshow.com/docs/calculation/complex_np_hard.png 'url'
+[complex_np_hard]: /docs/calculation/complex_np_hard.png 'url'
 >
 
 非NP完全的NP困难问题的例子有停机问题和布尔可满足性问题（SAT）。
