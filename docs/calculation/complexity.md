@@ -6,6 +6,8 @@ footer: false
 算法复杂度
 ===
 
+[myHost]: http://dsjs.docs.junfengshow.com
+
 ## 大*O*表示法
 
 |符号|名称|
@@ -247,7 +249,9 @@ NP问题中最难的是NP完全问题，它满足以下两个条件：<br />
 
 下面是满足P < > NP时，P、NP、NP完全和NP困难问题的欧拉图：
 >
-![images](/docs/calculation/complex_np_hard.png 'url')
+![images][complex_np_hard]
+
+[complex_np_hard]: http://dsjs.docs.junfengshow.com/docs/calculation/complex_np_hard.png 'url'
 >
 
 非NP完全的NP困难问题的例子有停机问题和布尔可满足性问题（SAT）。
