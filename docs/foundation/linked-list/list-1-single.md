@@ -13,7 +13,13 @@ footer: false
 ### append
 只需要考虑next指针。循环到链尾后将链尾到next属性指向该新创建到节点。
 
-![append](/docs/foundation/l1.png#width-half)
+<a href='https://upload.junfengshow.com/docs/foundation/l1.png' target='_blank'>
+  <img 
+    src='https://upload.junfengshow.com/docs/foundation/l1.png'
+    width='611'
+  />
+</a>
+
 ```typescript
 // 向链表末尾添加元素
 class LinkedList<V> implements LinkedListInterface<V> {

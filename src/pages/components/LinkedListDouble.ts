@@ -1,25 +1,8 @@
----
-title: 双向链表
-group:
-  title: 链表
-footer: false
----
-双向链表
-===
+/**
+ * 
+ * 双向链表
+ */
 
-<div>
-  <a href='https://upload.junfengshow.com/docs/foundation/linked_double.png' target='_blank'>
-    <img 
-      src='https://upload.junfengshow.com/docs/foundation/linked_double.png'
-      width='700'
-    />
-  </a>
-</div>
-
-## 属性和方法
-### 节点
-```typescript
-// typescript
 interface LinkedListNodeInterface<T> {
   elememt: T;
   next: LinkedListNodeInterface<T>|null;
@@ -33,33 +16,13 @@ class LinkedListNode<T> implements LinkedListNodeInterface<T> {
     this.elememt = element
   }
 }
-```
 
-### 方法
-```typescript
-// typescript
 interface LinkedListDoubleInterface <T> {
   // 在任意位置插入新元素
   insertAt: (position: number, element: T) => boolean;
   // 从任意位置移除元素
   removeAt: (position: number) => LinkedListNodeInterface<T>|null;
 }
-```
-
-## 方法实现
-
-### insertAt
-<div>
-  <a href='https://upload.junfengshow.com/docs/foundation/link_double_insert_03.png' target='_blank'>
-    <img 
-      src='https://upload.junfengshow.com/docs/foundation/link_double_insert_03.png'
-      width='700'
-    />
-  </a>
-</div>
-
-```typescript
-// typescript
 class LinkedListDouble<T> implements LinkedListDoubleInterface<T> {
   length: number = 0;
   head: LinkedListNodeInterface<T>|null = null;
@@ -117,28 +80,6 @@ class LinkedListDouble<T> implements LinkedListDoubleInterface<T> {
     return true
   } 
 
-  print () {
-    console.log(this.length)
-    console.log(this.head)
-  }
-}
-```
-
-### removeAt
-
-<div>
-  <a href='https://upload.junfengshow.com/docs/foundation/link_double_remove_03.png' target='_blank'>
-    <img 
-      src='https://upload.junfengshow.com/docs/foundation/link_double_remove_03.png'
-      width='700'
-    />
-  </a>
-</div>
-
-```typescript
-//typescript
-class LinkedListDouble<T> implements LinkedListDoubleInterface<T> {
-  // ...
   // 从任意位置移除元素,并返回该被移除的元素如果元素不存在则返回null
   removeAt (position: number): LinkedListNodeInterface<T>|null {
     if (position < 0 || position >= this.length) {
@@ -182,6 +123,20 @@ class LinkedListDouble<T> implements LinkedListDoubleInterface<T> {
     this.length--
     return current
   }
-  // ...
+
+  print () {
+    console.log(this.length)
+    console.log(this.head)
+  }
 }
-```
+
+
+;(function () {
+  let linkedList = new LinkedListDouble<number>()
+  ;[1, 2, 3, 4].forEach((item, i) => {
+    linkedList.insertAt(i, item)
+  });
+  linkedList.insertAt(1, 10)
+  linkedList.removeAt(4)
+  linkedList.print()
+})();

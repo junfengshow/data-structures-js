@@ -1,19 +1,8 @@
----
-title: 二叉树
-group:
-  title: 树
-  path: /tree
-footer: false
----
-二叉树
-===
+/**
+ * 
+ * 树
+ */
 
-二叉树中的节点最多只能有两个子节点:一个是左侧子节点，另一个是右侧子节点。
-这些定义有助于我们写出更高效的向/从树中插入、查找和删除节点的算法。
-二叉树在计算机科学中的应用非常广泛。
-
-## 节点
-```typescript
 interface TreeNodeItf<T> {
   key: T;
   left: TreeNodeItf<T>|null;
@@ -27,20 +16,18 @@ class TreeNode<T> implements TreeNodeItf<T> {
     this.key = key;
   }
 }
-```
-## 方法实现
-```typescript
+
 interface BinarySearchTreeInterface <T> {
   // 向树中插入一个健
   insert (key: T): void;
   // 在树中查找一个健
   search (key: T): boolean;
   // 通过中序遍历的方式遍历所有节点
-  inOrderTraverse (node: TreeNodeItf<T>): void;
+  inOrderTraverse (callback?: (key: T) => void): void;
   // 通过先序遍历的方式遍历所有节点
-  preOrderTraverse (node: TreeNodeItf<T>): void;
+  preOrderTraverse (callback?: (key: T) => void): void;
   // 通过后序遍历的方式遍历所有节点
-  postOrderTraverse (node: TreeNodeItf<T>): void;
+  postOrderTraverse (callback?: (key: T) => void): void;
   // 返回树中最小值/键
   min (): null|T|TreeNodeItf<T>;
   // 返回树中最大值/键
@@ -48,20 +35,8 @@ interface BinarySearchTreeInterface <T> {
   // 从树中移除某个键
   remove (key: T): void;
 }
-```
 
-```typescript
-class BinarySearchTree<T> implements BinarySearchTreeInterface<T> {
-  // 根节点
-  root: TreeNodeItf<T>|null = null;
-
-  // ...
-}
-```
-
-### insert
-```typescript
-// typescript
+// 插入节点
 let insertNode = function<T> (node: TreeNodeItf<T>, newNode: TreeNodeItf<T>) {
   if (newNode.key < node.key) {
     // 放左边
@@ -79,24 +54,8 @@ let insertNode = function<T> (node: TreeNodeItf<T>, newNode: TreeNodeItf<T>) {
     }
   }
 }
-class BinarySearchTree<T> implements BinarySearchTreeInterface<T> {
-  // ...
-  insert (key: T) {
-    const newNode = new TreeNode<T>(key)
-    if (!this.root) {
-      this.root = newNode
-      return
-    }
-    
-    insertNode<T>(this.root, newNode)
-  }
-  // ...
-}
-```
 
-### search
-```typescript
-// typescript
+// 搜索节点
 let searchNode = function<T> (node: TreeNodeItf<T>|null, key: T): boolean {
   if (node === null) {
     return false
@@ -110,52 +69,49 @@ let searchNode = function<T> (node: TreeNodeItf<T>|null, key: T): boolean {
   return true
 }
 
-class BinarySearchTree<T> implements BinarySearchTreeInterface<T> {
-  // ...
-  search (key: T): boolean {
-    return searchNode(this.root, key)
-  }
-  // ...
-}
-```
-### 遍历树
-```typescript
 // 中序遍历所有节点
-let inOrderTraverse = function<T>(
-  node: null|TreeNodeItf<T>, callback?: (key: T
-) => void) {
+let inOrderTraverse = function<T>(node: null|TreeNodeItf<T>, callback?: (key: T) => void) {
   if (node === null) {
     return
   }
-  inOrderTraverse(node.left)
+  inOrderTraverse(node.left, callback)
   callback && callback(node.key)
-  inOrderTraverse(node.right)
+  inOrderTraverse(node.right, callback)
 }
 // 先序遍历所有节点
-let preOrderTraverse = function<T>(
-  node: null|TreeNodeItf<T>, callback?: (key: T) => void
-) {
+let preOrderTraverse = function<T>(node: null|TreeNodeItf<T>, callback?: (key: T) => void) {
   if(node === null) {
     return
   }
   callback && callback(node.key)
-  preOrderTraverse(node.left)
-  preOrderTraverse(node.right)
+  preOrderTraverse(node.left, callback)
+  preOrderTraverse(node.right, callback)
 }
 // 后序遍历所有节点
-let postOrderTraverse = function<T>(
-  node: null|TreeNodeItf<T>, callback?: (key: T
-) => void) {
+let postOrderTraverse = function<T>(node: null|TreeNodeItf<T>, callback?: (key: T) => void) {
   if (node === null) {
     return
   }
-  postOrderTraverse(node.left)
-  postOrderTraverse(node.right)
+  postOrderTraverse(node.left, callback)
+  postOrderTraverse(node.right, callback)
   callback && callback(node.key)
 }
 
 class BinarySearchTree<T> implements BinarySearchTreeInterface<T> {
-  // ...
+  // 根节点
+  root: TreeNodeItf<T>|null = null;
+  insert (key: T) {
+    const newNode = new TreeNode<T>(key)
+    if (!this.root) {
+      this.root = newNode
+      return
+    }
+    insertNode<T>(this.root, newNode)
+  }
+  search (key: T): boolean {
+    return searchNode(this.root, key)
+  }
+
   // 通过中序遍历的方式遍历所有节点
   inOrderTraverse (callback?: (key: T) => void): void {
     inOrderTraverse(this.root, callback)
@@ -168,14 +124,6 @@ class BinarySearchTree<T> implements BinarySearchTreeInterface<T> {
   postOrderTraverse (callback?: (key: T) => void): void {
     postOrderTraverse(this.root, callback)
   }
-  // ...
-}
-```
-
-### min
-```typescript
-class BinarySearchTree<T> implements BinarySearchTreeInterface<T> {
-  // ...
   // 返回树中最小值/键
   min (): null|T|TreeNodeItf<T> {
     if (!this.root) {
@@ -187,14 +135,6 @@ class BinarySearchTree<T> implements BinarySearchTreeInterface<T> {
     }
     return node.key
   }
-  // ...
-}
-```
-
-### max
-```typescript
-class BinarySearchTree<T> implements BinarySearchTreeInterface<T> {
-  // ...
   // 返回树中最大值/键
   max (): null|T|TreeNodeItf<T> {
     if (!this.root) {
@@ -206,15 +146,6 @@ class BinarySearchTree<T> implements BinarySearchTreeInterface<T> {
     }
     return node.key
   }
-  // ...
-}
-```
-
-### remove
-> 删除节点
-
-```typescript
-class BinarySearchTree<T> implements BinarySearchTreeInterface<T> {
   // 从树中移除某个键
   remove (key: T): void {
     if (!this.root) {
@@ -261,13 +192,14 @@ class BinarySearchTree<T> implements BinarySearchTreeInterface<T> {
     removeNode<T>(key, this.root)
   }
 }
-```
 
-删除节点的时候是需要删除的节点存在子节点，如下图所示。
+;(function() {
+  const tree = new BinarySearchTree<number>()
 
-<a href='https://upload.junfengshow.com/docs/foundation/tree_remove_3.png' target='_blank'>
-  <img 
-    src='https://upload.junfengshow.com/docs/foundation/tree_remove_3.png'
-    width='330'
-  />
-</a>
+  ;[11, 7, 15, 5, 3, 9, 8, 10, 13, 12, 14, 20, 18, 25].forEach((item) => {
+    tree.insert(item)
+  })
+  // console.log(tree.search(1000))
+  // tree.remove(3)
+  // console.log(tree.min())
+})();

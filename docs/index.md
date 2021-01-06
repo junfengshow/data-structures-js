@@ -2,11 +2,11 @@
 title: 数据结构学习笔记
 hero:
   image: /doc_banner.jpeg
-  title: 数据结构
+  title: 学而思
   desc: 不积跬步，无以至千里，不积小流，无以成江海。
   actions:
     - text: 进入笔记
-      link: /foundation
+      link: /foundation/stack
 footer: © 2018-2020 All Rights Reserved Developed by [wujunfeng](https://www.junfengshow.com)
 ---
 
@@ -28,10 +28,10 @@ footer: © 2018-2020 All Rights Reserved Developed by [wujunfeng](https://www.ju
 
 #
 ## 常见的数据结构
-栈和队列
-链表
-集合
-字典和散列表
-树
-图  
-xx
++ 栈和队列
++ 链表
++ 集合
++ 字典和散列表
++ 树
++ 图  
++ xx

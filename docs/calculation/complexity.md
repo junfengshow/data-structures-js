@@ -249,8 +249,10 @@ NP问题中最难的是NP完全问题，它满足以下两个条件：<br />
 
 下面是满足P < > NP时，P、NP、NP完全和NP困难问题的欧拉图：
 >
-![http://dsjs.docs.junfengshow.com/docs/calculation/complex_np_hard.png](http://dsjs.docs.junfengshow.com/docs/calculation/complex_np_hard.png 'http://dsjs.docs.junfengshow.com/docs/calculation/complex_np_hard.png')
-
+<img 
+  src='https://upload.junfengshow.com/docs/calculation/complex_np_hard.png' 
+  width='150'
+/>
 
 非NP完全的NP困难问题的例子有停机问题和布尔可满足性问题（SAT）。
 NP完全问题的例子有子集和问题、旅行商问题、顶点覆盖问题，等等。

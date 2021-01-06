@@ -23,5 +23,9 @@
   "devDependencies": {
     "cross-env": "^7.0.3",
     "dumi": "^1.0.38"
+  },
+  "dependencies": {
+    "@types/fabric": "^4.2.0",
+    "fabric": "^4.3.0"
   }
 }

@@ -6,5 +6,4 @@ footer: false
 
 链表 -- 应用
 ===
-
-应用可可来的
+todo
