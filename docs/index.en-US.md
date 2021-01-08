@@ -7,7 +7,7 @@ hero:
   actions:
     - text: 进入笔记
       link: /foundation
-footer: © 2018-2020 All Rights Reserved Developed by [wujunfeng](https://www.junfengshow.com)
+footer: © 2018-2022 All Rights Reserved Developed by [wujunfeng](https://www.junfengshow.com)
 ---
 
 # this is readmeddd

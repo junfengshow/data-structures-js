@@ -8,6 +8,8 @@ import { fabric } from 'fabric'
 // import './components/SetDemo'
 // import SetUnion from '../components/SetUnion' 
 // import '../demos/tree'
+// import '../demos/sort'
+import '../demos/search'
 import { AvlTree, AvlNodeItf } from '../demos/treeAvl'
 
 
@@ -137,12 +139,13 @@ const Home = () => {
       loopTree(node.right, node, 'right', level)
     }
     loopTree(tree.root)
-    console.log(tree.root)
+    // console.log(tree.root)
   }, [])
   return (
     <div>
       <div>
         <Link to="/reactdemo">reactdemo</Link>
+        <Link to="/svgademo">svgademo</Link>
       </div>
       <canvas id='canvas' />
       <canvas id='canvas2' />

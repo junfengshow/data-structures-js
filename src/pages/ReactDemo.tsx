@@ -24,6 +24,7 @@ class ReactDemo extends React.Component<PropsInterface, StateInerface> {
         console.log(this.state.age)
       }
     }
+    
   }
   onAgeAdd = (e: React.MouseEvent) => {
     e.preventDefault()

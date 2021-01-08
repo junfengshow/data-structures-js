@@ -7,11 +7,10 @@ hero:
   actions:
     - text: 进入笔记
       link: /foundation/stack
-footer: © 2018-2020 All Rights Reserved Developed by [wujunfeng](https://www.junfengshow.com)
+footer: © 2018-2022 All Rights Reserved Developed by [wujunfeng](https://www.junfengshow.com)
 ---
 
-#
-## 优缺点对比
+## 数据结构优缺点
 | 数据结构 | 优点 | 缺点 |
 | :-------: | ---- | -- |
 | 数组 | 插入快，如果知道下标，可以非常快的存取 | 查找慢、删除慢、大小固定 |
@@ -26,12 +25,26 @@ footer: © 2018-2020 All Rights Reserved Developed by [wujunfeng](https://www.ju
 | 堆 | 插入删除快，对最大数据项的存取很快 | 对其他数据项存取慢 |
 | 图 | 对现实世界建模 | 有些算法慢且复杂 |
 
-#
 ## 常见的数据结构
-+ 栈和队列
-+ 链表
-+ 集合
-+ 字典和散列表
-+ 树
-+ 图  
-+ xx
++ [栈](/foundation/stack)
++ [队列](/foundation/queue)
++ [链表](/foundation/linked-list/list-0-index)
++ [集合](/foundation/set/set-0-index)
++ [字典和散列表](/foundation/map/map-0-index)
++ [树](/tree-graph/tree/tree-0-intro)
++ [图](/tree-graph/graph/graph-1)
+
+## 算法简介
++ [算法模式](/calculation/mode)
++ [算法复杂度](/calculation/complexity)
+
+## 数组排序
++ [冒泡](/calculation/sort)
++ [选择](/calculation/sort)
++ [插入](/calculation/sort)
++ [归并](/calculation/sort)
++ [快速](/calculation/sort)
++ [堆排序](/calculation/sort)
++ [计数排序](/calculation/sort)
++ [桶排序](/calculation/sort)
++ [基数排序](/calculation/sort)

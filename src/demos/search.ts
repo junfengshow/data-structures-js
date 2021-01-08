@@ -1,16 +1,8 @@
----
-title: 搜索
-order: 5
-footer: false
----
-搜索
-===
-
-## 顺序搜索
-直勾勾的循环比较
-
-```typescript
-// typescript
+/**
+ * 
+ * 搜索
+ */
+import { quickSort } from './sort'
 // 顺序搜索
 export const baseSearch = (
   array: Array<number>, 
@@ -24,18 +16,8 @@ export const baseSearch = (
   } 
   return -1
 }
-```
 
-## 二分搜索
-这个算法要求被搜索的数据结构**已排序**。以下是该算法遵循的步骤。
-+ 1.选择数组的中间值。
-+ 2.如果选中值是待搜索值，那么算法执行完毕(值找到了)。
-+ 3.如果待搜索值比选中值要小，则返回步骤1并在选中值左边的子数组中寻找。 
-+ 4.如果待搜索值比选中值要大，则返回步骤1并在选种值右边的子数组中寻找。
-
-**得到的下标是排序之后的数组的下标**
-```typescript
-// typescript
+let i = 0
 // 二分法搜索
 export const binarySearch = (
   array: Array<number>, 
@@ -58,6 +40,8 @@ export const binarySearch = (
   }
   return -1
 }
-```
 
-
+;(function (array: Array<number>) {
+  // console.log(baseSearch(array, 2))
+  console.log(binarySearch(array, 2))
+})([1, 10, 9, 8, 7, 2, 5, 3, 4, 6, 2]);
