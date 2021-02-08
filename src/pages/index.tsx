@@ -9,7 +9,8 @@ import { fabric } from 'fabric'
 // import SetUnion from '../components/SetUnion' 
 // import '../demos/tree'
 // import '../demos/sort'
-import '../demos/search'
+// import '../demos/search'
+import '../demos/graph'
 import { AvlTree, AvlNodeItf } from '../demos/treeAvl'
 
 
@@ -99,6 +100,7 @@ const Home = () => {
     canvas.setHeight(400);
     const midLeft = 600
 
+    let groups: Array<any> = [], lines: Array<any> = []
     function loopTree<T> (
       node: null|AvlNodeItf<T>,
       parentNode?: AvlNodeItf<T>,
@@ -118,7 +120,7 @@ const Home = () => {
         node.pLeft = _pLeft + dis * (levelWidths[level])
         node.pTop = _pTop +  60 + level * 4
       }
-      const circle = createGroup({
+      const group = createGroup({
         left: node.pLeft,
         top: node.pTop,
         text: node.key + ''
@@ -131,14 +133,18 @@ const Home = () => {
           stroke: 'black',
           strokeWidth: 1
         })
-        canvas.add(line)
+        lines.push(line)
+        // canvas.add(line)
       }
-      canvas.add(circle)
+      groups.push(group)
+      // canvas.add(group)
       level += 1
       loopTree(node.left, node, 'left', level)
       loopTree(node.right, node, 'right', level)
     }
     loopTree(tree.root)
+    canvas.add(...lines)
+    canvas.add(...groups)
     // console.log(tree.root)
   }, [])
   return (

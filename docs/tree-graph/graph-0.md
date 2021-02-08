@@ -98,3 +98,18 @@ A和B不是强连通的。
 关联矩阵通常用于边的数量比顶点多的情况下，以节省空间和内存。
 
 ## 创建图
+```typescript
+// typescript
+interface GraphInterface<T> {
+  // 顶点
+  vertices: Array<T>;
+  // 边
+  adjList: Map<T, Array<T>>;
+  // 向图中添加顶点
+  addVertex (v: T): void;
+  // 向图中添加边
+  addEdge (v: T, w: T): void;
+  // 打印图
+  toString (): string;
+}
+```

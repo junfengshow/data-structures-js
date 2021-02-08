@@ -15,7 +15,7 @@ interface QueueInterface <T> {
   size: () => number;
 }
 
-class Queue <T> implements QueueInterface<T> {
+export class Queue <T> implements QueueInterface<T> {
   items: Array<T> = [];
 
   // 想队列中添加一个或者多个元素
