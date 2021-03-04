@@ -143,5 +143,5 @@ function printNode<T> (value: T) {
 
   // console.log(graph.toString())
   // graph.bfs('A', printNode)
-  console.log(graph.BFS('A'))
+  // console.log(graph.BFS('A'))
 })();

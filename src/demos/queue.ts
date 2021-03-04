@@ -131,5 +131,5 @@ let loop = 0
     eliminated = queue.dequeue() || ''
     // console.log(`${eliminated}被淘汰了`)
   }
-  console.log(queue.dequeue()) 
+  // console.log(queue.dequeue()) 
 })(['Mark', 'Jane','Jack','Camila','Ingrid','Carl'], 2);

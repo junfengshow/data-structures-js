@@ -149,9 +149,15 @@ const Home = () => {
   }, [])
   return (
     <div>
+      <ul>
+        <li><Link to="/reactdemo">reactdemo</Link></li>
+        <li><Link to="/svgademo">svgademo</Link></li>
+        <li><Link to="/arraysort">array sort</Link></li>
+        <li><Link to="/reduxdemo">redux demo</Link></li>
+      </ul>
       <div>
-        <Link to="/reactdemo">reactdemo</Link>
-        <Link to="/svgademo">svgademo</Link>
+        一个task(宏任务) -- 队列中全部job(微任务) -- requestAnimationFrame 
+        -- 浏览器重排/重绘 -- requestIdleCallback
       </div>
       <canvas id='canvas' />
       <canvas id='canvas2' />

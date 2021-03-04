@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/junfengshow/data-structures-js#readme",
   "devDependencies": {
+    "@umijs/plugin-dva": "^0.10.0",
     "cross-env": "^7.0.3",
     "dumi": "^1.0.38"
   },
@@ -31,6 +32,8 @@
     "markdown-it": "^12.0.4",
     "react-lz-editor": "^0.12.1",
     "react-markdown-editor-lite": "^1.2.4",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
     "svgaplayerweb": "^2.3.1"
   }
 }
