@@ -387,27 +387,27 @@ O ( N ) + O ( M ∗ ( N / M ∗ l o g ( N / M ) ) ) = O ( N ∗ ( l o g ( N / M 
 // typescript
 // 基数排序 小 --> 大
 function radixSort(arr: Array<number>, maxDigit: number) {
-  let mod: number = 10;
-  let dev: number = 1;
-  let counter: Array<Array<number>> = [];
-  for (let i = 0; i < maxDigit; i++, dev *= 10, mod *= 10) {
-    for(let j = 0; j < arr.length; j++) {
-      let bucket = Math.floor((arr[j] % mod) / dev);
-      if(!counter[bucket]) {
-        counter[bucket] = [];
-      }
-      counter[bucket].push(arr[j]);
-    }
-    let pos = 0;
-    for(let j = 0; j < counter.length; j++) {
-      let value = null;
-      if(counter[j] !== null) {
-        while ((value = counter[j].shift()) !== null) {
-          arr[pos++] = value;
-        }
-      }
-    }
-  }
-  return arr;
+ let mod: number = 10;
+ let dev: number = 1;
+ let counter: Array<Array<number>> = [];
+ for (let i = 0; i < maxDigit; i++, dev *= 10, mod *= 10) {
+   for(let j = 0; j < arr.length; j++) {
+     let bucket = Math.floor((arr[j] % mod) / dev);
+     if(!counter[bucket]) {
+       counter[bucket] = [];
+     }
+     counter[bucket].push(arr[j]);
+   }
+   let pos: number = 0;
+   for(let j = 0; j < counter.length; j++) {
+     let value;
+     if(counter[j]) {
+       while (value = counter[j].shift()) {
+         arr[pos++] = value;
+       }
+     }
+   }   
+ }
+ return arr;
 }
 ```

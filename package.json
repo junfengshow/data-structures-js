@@ -26,10 +26,17 @@
     "dumi": "^1.0.38"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.0",
+    "@fdt/cmp-react": "^0.0.8",
     "@types/fabric": "^4.2.0",
-    "cnpm": "^6.1.1",
+    "antd": "^4.19.5",
+    "axios": "^0.27.2",
+    "caret-pos": "^2.0.0",
     "fabric": "^4.3.0",
+    "graphql": "^16.6.0",
+    "html-parse-stringify": "^3.0.1",
     "markdown-it": "^12.0.4",
+    "react-contenteditable": "^3.3.6",
     "react-lz-editor": "^0.12.1",
     "react-markdown-editor-lite": "^1.2.4",
     "redux": "^4.0.5",

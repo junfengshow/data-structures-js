@@ -1,7 +1,6 @@
 ---
 title: 数据结构学习笔记
 hero:
-  image: /doc_banner.jpeg
   title: 学而思
   desc: 不积跬步，无以至千里，不积小流，无以成江海。
   actions:

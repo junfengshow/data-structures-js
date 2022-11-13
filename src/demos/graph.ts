@@ -58,7 +58,7 @@ export class Graph<T> implements GraphInterface<T> {
     for (let i = 0; i < vertices.length; i++) {
       colorMap.set(vertices[i], 'white')
     }
-    return colorMap
+    return colorMap;
   }
   // 广度优先搜索
   bfs (v: T, callback?: (u: T) => void) {
@@ -109,7 +109,8 @@ export class Graph<T> implements GraphInterface<T> {
         if (color.get(w) === 'white'){
           color.set(w, 'grey')
           d[w] = d[u] + 1; 
-          pred[w] = u; queue.enqueue(w);
+          pred[w] = u; 
+          queue.enqueue(w);
         } 
       }
       color.set(u, 'black');

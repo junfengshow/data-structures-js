@@ -1,0 +1,23 @@
+.wrap {
+  display: flex;
+  align-items: stretch;
+  height: 100vh;
+
+  .pageLeft {
+    flex: 0 0 240px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .pageRight {
+    flex: auto;
+    position: relative;
+  }
+  :global {
+    .ant-menu {
+      height: 100%;
+    }
+    .ant-menu .ant-menu-item {
+      margin-bottom: 0;
+    }
+  }
+}

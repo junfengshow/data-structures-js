@@ -214,15 +214,15 @@ function radixSort(arr: Array<number>, maxDigit: number) {
       }
       counter[bucket].push(arr[j]);
     }
-    let pos = 0;
+    let pos: number = 0;
     for(let j = 0; j < counter.length; j++) {
-      let value = null;
-      if(counter[j]!=null) {
-        while ((value = counter[j].shift()) != null) {
+      let value;
+      if(counter[j]) {
+        while (value = counter[j].shift()) {
           arr[pos++] = value;
         }
       }
-    }
+    }   
   }
   return arr;
 }

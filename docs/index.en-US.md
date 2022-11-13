@@ -1,7 +1,6 @@
 ---
 title: 数据结构学习笔记
 hero:
-  image: /doc_banner.jpeg
   title: 算法
   desc: jddkdk
   actions:

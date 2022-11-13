@@ -2,6 +2,9 @@ import { defineConfig } from 'umi'
 export default defineConfig({
   // 站点模式
   mode: 'site',
+  history: {
+    type: 'hash'
+  },
   // mode: 'doc',
   // ssr: {
   //   forceInitial: false,
@@ -34,6 +37,7 @@ export default defineConfig({
   },
 
   base: '/',
+  publicPath: './',
   navs: [
     { path: '/foundation', title: '数据结构简' },
     { path: '/tree-graph', title: '树和图' },
@@ -75,5 +79,8 @@ export default defineConfig({
     // 设置 alias
     memo.entry('umi').add('./docs/app.ts')
   },
-  hash: true
+  hash: true,
+  devServer: {
+    port: 8082
+  },
 })

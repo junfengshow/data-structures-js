@@ -18,7 +18,7 @@ interface StackInterface <E> {
   size: () => number;
 }
 
-class Stack<E> implements StackInterface<E> {
+export class Stack<E> implements StackInterface<E> {
   items: Array<E> = [];
   push (elements: E|Array<E>) {
     Array.isArray(elements)
@@ -49,7 +49,7 @@ class Stack<E> implements StackInterface<E> {
   }
 
   print () {
-    console.log(this.items)
+    // console.log(this.items)
   }
 }
 
@@ -83,5 +83,5 @@ class Stack<E> implements StackInterface<E> {
     }
     return binaryString
   }
-  console.log(baseConvert(-10, 2)) // -1010
+  // console.log(baseConvert(-10, 2)) // -1010
 })();

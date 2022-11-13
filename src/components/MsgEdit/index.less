@@ -1,0 +1,41 @@
+.msg-edit {
+  word-break: break-all;
+  width: 464px;
+  font-size: 14px;
+  font-weight: 400;
+  
+  .msg-edit-content {
+    height: 470px;
+    border-radius: 4px; 
+    background: #F2F2F2;
+    padding: 12px;
+    outline: none;
+    border: 1px solid #F2F2F2;
+    box-sizing: border-box;
+    transition: border .3s ease 0s;
+    color: rgba(0, 0, 0, 0.85);
+    overflow: auto;
+  }
+  .msg-edit-txt {
+    white-space: nowrap;
+    color: #4A86FF;
+    font-weight: 400;
+  }
+  .msg-edit-content:focus {
+    border-color: #4A86FF;
+    transition: border .3s ease 0s;
+  }
+
+  .msg-edit-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .msg-edit-actions > a {
+    margin-right: 16px;
+    color: #4A86FF;
+    font-size: 14px;
+    user-select: none; 
+    cursor: pointer;
+  }
+}

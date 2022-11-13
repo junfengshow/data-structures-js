@@ -12,7 +12,7 @@ export default {
   },
   reducers: {
     setName: (state: any, payload: any) => {
-      console.log('payload', payload)
+      // console.log('payload', payload)
       return Object.assign({}, state, payload)
     }
   },

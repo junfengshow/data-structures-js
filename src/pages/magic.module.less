@@ -1,0 +1,51 @@
+.boxWrap {
+  position: relative;
+  border-left: 1px solid #bbb;
+  border-top: 1px solid #bbb;
+
+  .boxRow {
+    display: flex;
+    align-items: center;
+  }
+  .boxCol {
+    background: #eee;
+    flex: 1;
+    border-right: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+  }
+  .boxColActive {
+    background: #bbb;
+  }
+
+  .resultBox {
+    background: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid red;
+  }
+  .resultBox:hover {
+    border: 1px dashed red;
+  }
+  .resultBoxClose {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    color: red;
+  }
+}
+
+.finalWrap {
+  position: relative;
+
+  .finalBox {
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+  }
+}

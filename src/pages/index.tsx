@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import { fabric } from 'fabric'
 // import './components/LinkedListSingle' 
 // import './components/LinkedListDouble' 
@@ -149,12 +148,7 @@ const Home = () => {
   }, [])
   return (
     <div>
-      <ul>
-        <li><Link to="/reactdemo">reactdemo</Link></li>
-        <li><Link to="/svgademo">svgademo</Link></li>
-        <li><Link to="/arraysort">array sort</Link></li>
-        <li><Link to="/reduxdemo">redux demo</Link></li>
-      </ul>
+      
       <div>
         一个task(宏任务) -- 队列中全部job(微任务) -- requestAnimationFrame 
         -- 浏览器重排/重绘 -- requestIdleCallback
