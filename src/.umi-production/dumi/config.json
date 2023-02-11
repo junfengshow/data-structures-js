@@ -1,0 +1,394 @@
+{
+  "menus": {
+    "en-US": {
+      "*": [
+        {
+          "path": "/en-US",
+          "title": "Index",
+          "meta": {}
+        }
+      ],
+      "/en-US/calculation": [
+        {
+          "path": "/en-US/calculation",
+          "title": "Calculation",
+          "meta": {}
+        },
+        {
+          "path": "/en-US/calculation/complexity",
+          "title": "Complexity",
+          "meta": {}
+        },
+        {
+          "path": "/en-US/calculation/mode",
+          "title": "Mode",
+          "meta": {}
+        },
+        {
+          "path": "/en-US/calculation/search",
+          "title": "Search",
+          "meta": {}
+        },
+        {
+          "path": "/en-US/calculation/sort",
+          "title": "Sort",
+          "meta": {}
+        }
+      ],
+      "/en-US/foundation": [
+        {
+          "path": "/en-US/foundation",
+          "title": "Foundation",
+          "meta": {}
+        },
+        {
+          "title": "Linked-list",
+          "path": "/en-US/foundation/linked-list",
+          "meta": {},
+          "children": [
+            {
+              "path": "/en-US/foundation/linked-list/list-0-index",
+              "title": "List-0-index",
+              "meta": {}
+            },
+            {
+              "path": "/en-US/foundation/linked-list/list-1-single",
+              "title": "List-1-single",
+              "meta": {}
+            },
+            {
+              "path": "/en-US/foundation/linked-list/list-2-doubly",
+              "title": "List-2-doubly",
+              "meta": {}
+            },
+            {
+              "path": "/en-US/foundation/linked-list/list-3-circular",
+              "title": "List-3-circular",
+              "meta": {}
+            },
+            {
+              "path": "/en-US/foundation/linked-list/list-9-usage1",
+              "title": "List-9-usage1",
+              "meta": {}
+            },
+            {
+              "path": "/en-US/foundation/linked-list/list-99-summary",
+              "title": "List-99-summary",
+              "meta": {}
+            }
+          ]
+        },
+        {
+          "title": "Map",
+          "path": "/en-US/foundation/map",
+          "meta": {},
+          "children": [
+            {
+              "path": "/en-US/foundation/map/map-0-index",
+              "title": "Map-0-index",
+              "meta": {}
+            },
+            {
+              "path": "/en-US/foundation/map/map-1-impl",
+              "title": "Map-1-impl",
+              "meta": {}
+            },
+            {
+              "path": "/en-US/foundation/map/map-2-hash",
+              "title": "Map-2-hash",
+              "meta": {}
+            }
+          ]
+        },
+        {
+          "path": "/en-US/foundation/queue",
+          "title": "Queue",
+          "meta": {}
+        },
+        {
+          "title": "Set",
+          "path": "/en-US/foundation/set",
+          "meta": {},
+          "children": [
+            {
+              "path": "/en-US/foundation/set/set-0-index",
+              "title": "Set-0-index",
+              "meta": {}
+            },
+            {
+              "path": "/en-US/foundation/set/set-1-impl",
+              "title": "Set-1-impl",
+              "meta": {}
+            }
+          ]
+        },
+        {
+          "path": "/en-US/foundation/stack",
+          "title": "Stack",
+          "meta": {}
+        }
+      ],
+      "/en-US/tree-graph": [
+        {
+          "path": "/en-US/tree-graph/graph-0",
+          "title": "Graph-0",
+          "meta": {}
+        },
+        {
+          "path": "/en-US/tree-graph/graph-1",
+          "title": "Graph-1",
+          "meta": {}
+        },
+        {
+          "path": "/en-US/tree-graph/graph-2",
+          "title": "Graph-2",
+          "meta": {}
+        },
+        {
+          "path": "/en-US/tree-graph/graph-3",
+          "title": "Graph-3",
+          "meta": {}
+        },
+        {
+          "path": "/en-US/tree-graph/tree-0-intro",
+          "title": "Tree-0-intro",
+          "meta": {}
+        },
+        {
+          "path": "/en-US/tree-graph/tree-1-binary",
+          "title": "Tree-1-binary",
+          "meta": {}
+        },
+        {
+          "path": "/en-US/tree-graph/tree-2-avl",
+          "title": "Tree-2-AVL",
+          "meta": {}
+        },
+        {
+          "path": "/en-US/tree-graph/tree-3-redblack",
+          "title": "Tree-3-redblack",
+          "meta": {}
+        }
+      ]
+    },
+    "zh-CN": {
+      "*": [
+        {
+          "path": "/",
+          "title": "Index",
+          "meta": {}
+        }
+      ],
+      "/calculation": [
+        {
+          "path": "/calculation",
+          "title": "Calculation",
+          "meta": {}
+        },
+        {
+          "path": "/calculation/complexity",
+          "title": "Complexity",
+          "meta": {}
+        },
+        {
+          "path": "/calculation/mode",
+          "title": "Mode",
+          "meta": {}
+        },
+        {
+          "path": "/calculation/search",
+          "title": "Search",
+          "meta": {}
+        },
+        {
+          "path": "/calculation/sort",
+          "title": "Sort",
+          "meta": {}
+        }
+      ],
+      "/foundation": [
+        {
+          "path": "/foundation",
+          "title": "Foundation",
+          "meta": {}
+        },
+        {
+          "title": "Linked-list",
+          "path": "/foundation/linked-list",
+          "meta": {},
+          "children": [
+            {
+              "path": "/foundation/linked-list/list-0-index",
+              "title": "List-0-index",
+              "meta": {}
+            },
+            {
+              "path": "/foundation/linked-list/list-1-single",
+              "title": "List-1-single",
+              "meta": {}
+            },
+            {
+              "path": "/foundation/linked-list/list-2-doubly",
+              "title": "List-2-doubly",
+              "meta": {}
+            },
+            {
+              "path": "/foundation/linked-list/list-3-circular",
+              "title": "List-3-circular",
+              "meta": {}
+            },
+            {
+              "path": "/foundation/linked-list/list-9-usage1",
+              "title": "List-9-usage1",
+              "meta": {}
+            },
+            {
+              "path": "/foundation/linked-list/list-99-summary",
+              "title": "List-99-summary",
+              "meta": {}
+            }
+          ]
+        },
+        {
+          "title": "Map",
+          "path": "/foundation/map",
+          "meta": {},
+          "children": [
+            {
+              "path": "/foundation/map/map-0-index",
+              "title": "Map-0-index",
+              "meta": {}
+            },
+            {
+              "path": "/foundation/map/map-1-impl",
+              "title": "Map-1-impl",
+              "meta": {}
+            },
+            {
+              "path": "/foundation/map/map-2-hash",
+              "title": "Map-2-hash",
+              "meta": {}
+            }
+          ]
+        },
+        {
+          "path": "/foundation/queue",
+          "title": "Queue",
+          "meta": {}
+        },
+        {
+          "title": "Set",
+          "path": "/foundation/set",
+          "meta": {},
+          "children": [
+            {
+              "path": "/foundation/set/set-0-index",
+              "title": "Set-0-index",
+              "meta": {}
+            },
+            {
+              "path": "/foundation/set/set-1-impl",
+              "title": "Set-1-impl",
+              "meta": {}
+            }
+          ]
+        },
+        {
+          "path": "/foundation/stack",
+          "title": "Stack",
+          "meta": {}
+        }
+      ],
+      "/tree-graph": [
+        {
+          "path": "/tree-graph/graph-0",
+          "title": "Graph-0",
+          "meta": {}
+        },
+        {
+          "path": "/tree-graph/graph-1",
+          "title": "Graph-1",
+          "meta": {}
+        },
+        {
+          "path": "/tree-graph/graph-2",
+          "title": "Graph-2",
+          "meta": {}
+        },
+        {
+          "path": "/tree-graph/graph-3",
+          "title": "Graph-3",
+          "meta": {}
+        },
+        {
+          "path": "/tree-graph/tree-0-intro",
+          "title": "Tree-0-intro",
+          "meta": {}
+        },
+        {
+          "path": "/tree-graph/tree-1-binary",
+          "title": "Tree-1-binary",
+          "meta": {}
+        },
+        {
+          "path": "/tree-graph/tree-2-avl",
+          "title": "Tree-2-AVL",
+          "meta": {}
+        },
+        {
+          "path": "/tree-graph/tree-3-redblack",
+          "title": "Tree-3-redblack",
+          "meta": {}
+        }
+      ]
+    }
+  },
+  "locales": [
+    {
+      "name": "zh-CN",
+      "label": "中文"
+    },
+    {
+      "name": "en-US",
+      "label": "English"
+    }
+  ],
+  "navs": {
+    "zh-CN": [
+      {
+        "path": "/foundation",
+        "title": "数据结构简"
+      },
+      {
+        "path": "/tree-graph",
+        "title": "树和图"
+      },
+      {
+        "path": "/calculation",
+        "title": "算法"
+      }
+    ],
+    "en-US": [
+      {
+        "path": "/foundation",
+        "title": "数据结构简"
+      },
+      {
+        "path": "/tree-graph",
+        "title": "树和图"
+      },
+      {
+        "path": "/calculation",
+        "title": "算法"
+      }
+    ]
+  },
+  "title": "算法与数据结构",
+  "logo": "//www.junfengshow.com/static/assets/logo.png",
+  "mode": "site",
+  "repository": {
+    "url": "https://github.com/junfengshow/data-structures-js",
+    "branch": "master"
+  },
+  "theme": {}
+}
