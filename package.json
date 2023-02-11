@@ -44,6 +44,6 @@
     "svgaplayerweb": "^2.3.1"
   },
   "engines": {
-    "node": "16.18.0"
+    "node": "16.18.1"
   }
 }
